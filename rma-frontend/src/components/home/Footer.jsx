@@ -1,5 +1,6 @@
 import { Box, Stack, Typography, Divider } from '@mui/material'
 import { Image } from 'mui-image'
+import ReloopLogo from '/src/assets/images/Reloop-logo.png'
 
 function Footer() {
     return (
@@ -14,7 +15,7 @@ function Footer() {
                     fontWeight='light'
                     gap={4}
                 >
-                    <Image src='src/assets/images/Reloop-logo.png' alt='logo' width='200px' height='auto' />
+                    <Image src={ReloopLogo} alt='logo' width='200px' height='auto' />
                     <Typography
                         variant='body2'
                         sx={{
