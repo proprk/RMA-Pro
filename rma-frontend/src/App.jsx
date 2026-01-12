@@ -1,12 +1,15 @@
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
+import StoreRegistration from './components/store/StoreRegistration'
 
 function App() {
-
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/store/register" element={<StoreRegistration />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
