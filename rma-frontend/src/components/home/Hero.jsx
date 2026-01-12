@@ -6,11 +6,11 @@ function Hero() {
     return (
         <>
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', py: { xs: 8, md: 12 }, px: { xs: 2, md: 12 }, maxWidth: '100%' }}>
-                <Stack gap={{ xs: 4, md: 6 }} width={{ xs: '100%', md: '85%' }} alignItems="center" textAlign="center">
+                <Stack gap={{ xs: 4, md: 4 }} width={{ xs: '100%', md: '85%' }} alignItems="center" textAlign="center">
                     <Typography variant="h1" sx={{ fontSize: { xs: '2.5rem', md: '4.5rem' }, fontWeight: 'light', color: '#000', lineHeight: '1.1' }}>Circular Economy Solution for <span style={{ fontWeight: 'light', color: '#6c6d6d', background: 'linear-gradient(to bottom, #fff, #f2e9cf)', padding: '0.25rem 0.75rem' }}>Display Structures</span></Typography>
 
                     <Box mt={1}>
-                        <Typography variant="body1" sx={{ fontSize: { xs: '1.1rem', md: '1.5rem' }, color: '#6c6d6d', textAlign: 'center', fontWeight: 'light' }}>Display Structures Supply Chain Management - EssilorLuxottica</Typography>
+                        <Typography variant="body1" sx={{ fontSize: { xs: '1.1rem', md: '1.5rem' }, color: '#6c6d6d', textAlign: 'center', fontWeight: 'light' }}>Display Structures Lifecycle Management- EssilorLuxottica</Typography>
                     </Box>
 
                     <Box mt={2} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: { xs: 1, md: 2 }, flexWrap: 'wrap' }}>

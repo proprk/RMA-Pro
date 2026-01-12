@@ -1,3 +1,4 @@
+import Navbar from '../components/home/Navbar'
 import Hero from '../components/home/Hero'
 import Challenges from '../components/home/Challenges'
 import Solution from '../components/home/Solution'
@@ -10,10 +11,12 @@ import Phase4 from '../components/home/Phase4'
 import DecisionPoint from '../components/home/DecisionPoint'
 import Phase5 from '../components/home/Phase5'
 import CompleteFlow from '../components/home/CompleteFlow'
+import Footer from '../components/home/Footer'
 
 function Home() {
     return (
         <>
+            <Navbar />
             <Hero />
             <Challenges />
             <Solution />
@@ -26,6 +29,7 @@ function Home() {
             <CompleteFlow />
             <ProgramEnhancements />
             <ExpectedImpact />
+            <Footer />
         </>
     )
 }
