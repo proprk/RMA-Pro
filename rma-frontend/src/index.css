@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+/* Lufga Font Configuration - Restricted to Letters Only */
+/* Numbers, symbols, and punctuation will fallback to Poppins */
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-thinitalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-extralight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-extralightitalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-lightitalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-mediumitalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-semibolditalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-extrabolditalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('./assets/fonts/Fontspring-DEMO-lufga-blackitalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    unicode-range: U+0020, U+0041-005A, U+0061-007A;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lufga", "Poppins", sans-serif;
+    background: linear-gradient(to right, #efedec, #f2e9cf);
+    min-height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    font-weight: light;
+}
+
+.secondary-text {
+    font-weight: light;
+    color: #6c6d6d;
+}
+
+.button-text {
+    font-size: 1rem;
+    font-weight: light;
+}
+
+.card-yellow {
+    background-color: #edd1a3;
+    border-radius: 5rem;
+    padding: 2rem;
+    color: #000;
+}
