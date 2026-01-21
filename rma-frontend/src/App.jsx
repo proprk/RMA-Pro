@@ -5,6 +5,8 @@ import StoreLogin from './components/store/StoreLogin'
 import StoreProtectedRoute from './routes/StoreProtectedRoute'
 import StoreDashboard from './pages/store/StoreDashboard'
 import CreateReturnRequest from './pages/store/CreateStoreRequest'
+import StoreRequestsList from './pages/store/StoreRequestsList'
+import StoreRequestDetails from './pages/store/StoreRequestDetails'
 
 function App() {
   return (
@@ -23,11 +25,21 @@ function App() {
             <CreateReturnRequest />
           </StoreProtectedRoute>
         } />
+        <Route path="/store/requests" element={
+          <StoreProtectedRoute>
+            <StoreRequestsList />
+          </StoreProtectedRoute>
+        } />
+        <Route path="/store/requests/:requestId"
+          element={
+            <StoreProtectedRoute>
+              <StoreRequestDetails />
+            </StoreProtectedRoute>
+          }
+        />
       </Routes>
-
-
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;

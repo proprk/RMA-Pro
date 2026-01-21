@@ -7,7 +7,7 @@ const inputStyle = {
         borderRadius: '1rem',
         backgroundColor: '#fff',
         height: 42,
-        fontSize: 14,
+        fontSize: 12,
         '& fieldset': {
             border: '0.5px solid #4a4a4aff',
         },

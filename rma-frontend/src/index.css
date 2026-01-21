@@ -154,22 +154,23 @@
 body {
     font-family: "Lufga", "Poppins", sans-serif;
     background: linear-gradient(to right, #efedec, #f2e9cf);
+    background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1rem;
-    font-weight: light;
+    font-size: 11px;
+    font-weight: 300;
 }
 
 .secondary-text {
-    font-weight: light;
+    font-weight: 300;
     color: #6c6d6d;
 }
 
 .button-text {
-    font-size: 1rem;
-    font-weight: light;
+    font-size: 11px;
+    font-weight: 300;
 }
 
 .card-yellow {
@@ -177,4 +178,119 @@ body {
     border-radius: 5rem;
     padding: 2rem;
     color: #000;
+}
+
+.headerTextStyle {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.navTextStyle {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.titleTextStyle {
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+
+.labelTextStyle {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+
+.bodyTextStyle {
+    font-size: 12px !important;
+    font-weight: 300 !important;
+}
+
+.blueButton {
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px !important;
+    background-color: #a4c2ef !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.blueButton:hover {
+    background-color: #85b9e8 !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.purpleButton {
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px !important;
+    background-color: #d1a4ef !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.purpleButton:hover {
+    background-color: #b88de8 !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.lightOrangeButton {
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px !important;
+    background-color: #eeb9a3 !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.lightOrangeButton:hover {
+    background-color: #dfbbac !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.pink1Button {
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px !important;
+    background-color: #eea2e6 !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.pink1Button:hover {
+    background-color: #e1a8db !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.pink2Button {
+    margin-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 12px !important;
+    background-color: #eda3b7 !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
+}
+
+.pink2Button:hover {
+    background-color: #e4b0be !important;
+    color: #000 !important;
+    border-radius: 2rem !important;
 }

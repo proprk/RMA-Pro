@@ -10,7 +10,7 @@ const inputStyle = {
         borderRadius: '1rem',
         backgroundColor: '#fff',
         height: 42,
-        fontSize: 14,
+        fontSize: 12,
         '& fieldset': {
             border: '0.5px solid #4a4a4aff',
         },
@@ -411,7 +411,7 @@ function StoreRegistration() {
                         {isSubmitting ? "Please wait..." : "Sign Up"}
                     </Button>
                     <Typography sx={{ textAlign: 'center', fontWeight: 'light', mt: 1, fontSize: 12 }}>
-                        Already have an account with us? Please {' '} <Link href="/login" sx={{ fontWeight: 'bold', color: '#eea2e6', textDecoration: 'underline' }} >Login</Link>
+                        Already have an account with us? Please {' '} <Link href="/store/login" sx={{ fontWeight: 'bold', color: '#eea2e6', textDecoration: 'underline' }} >Login</Link>
                     </Typography>
                 </Box>
             </Box>

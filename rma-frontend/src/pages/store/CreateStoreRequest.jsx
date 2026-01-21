@@ -19,8 +19,8 @@ const inputStyle = {
     "& .MuiOutlinedInput-root": {
         borderRadius: "1rem",
         backgroundColor: "#fff",
-        height: 42,
-        fontSize: 14,
+        height: 32,
+        fontSize: 12,
     },
 }
 
@@ -182,6 +182,8 @@ function CreateReturnRequest() {
 
         if (!validate()) return
 
+        navigate('/store/requests')
+
         console.log("Return Request Data:", formData)
     }
 
@@ -189,15 +191,15 @@ function CreateReturnRequest() {
         <>
             <StoreDashboardHeader />
 
-            <Box sx={{ maxHeight: 'calc(100vh - 64px)', overflow: 'auto', px: { xs: 2, sm: 2, md: 4, lg: 6 }, py: 2 }}>
-                <Typography variant="h5" fontWeight={600} mb={3} textAlign='center'>
-                    Create Return Request
+            <Box sx={{ px: { xs: 2, sm: 2, md: 4, lg: 6 }, py: 2 }} maxWidth='1440px' mx='auto'>
+                <Typography mb={3} textAlign='left' className="headerText" fontWeight={600}>
+                    Create Return Request :
                 </Typography>
 
                 <Paper
                     elevation={0}
                     sx={{
-                        maxWidth: 800,
+                        maxWidth: '1440px',
                         mx: "auto",
                         p: 4,
                         borderRadius: "1.5rem",
@@ -205,11 +207,11 @@ function CreateReturnRequest() {
                     }}
                 >
                     {/* Section 1: Product Info */}
-                    <Typography fontWeight={500} mb={1}>
-                        Product Information
+                    <Typography mb={1} className="titleText">
+                        Product Information :
                     </Typography>
 
-                    <Stack spacing={2}>
+                    <Stack spacing={1}>
                         <TextField
                             name="materialCode"
                             placeholder="Material Code"
@@ -242,17 +244,18 @@ function CreateReturnRequest() {
                             error={!!errors.reason}
                             helperText={errors.reason}
                             rows={3}
+                            className="bodyText"
                         />
                     </Stack>
 
                     <Divider sx={{ my: 4 }} />
 
                     {/* Section 2: Physical Details */}
-                    <Typography fontWeight={500} mb={1}>
-                        Physical Details
+                    <Typography mb={1} className="titleText">
+                        Physical Details :
                     </Typography>
 
-                    <Stack spacing={2} direction="row">
+                    <Stack spacing={1} direction="row">
                         <TextField
                             name="height"
                             type="number"
@@ -298,15 +301,16 @@ function CreateReturnRequest() {
                         error={!!errors.quantity}
                         helperText={errors.quantity}
                         sx={{ ...inputStyle, mt: 2 }}
+                        className="bodyText"
                     />
 
                     <Divider sx={{ my: 4 }} />
 
-                    <Typography fontWeight={500} mb={1}>
-                        Packing Details
+                    <Typography mb={1} className="titleText">
+                        Packing Details :
                     </Typography>
 
-                    <Stack spacing={2}>
+                    <Stack spacing={1}>
                         {formData.packagingList.map((row, index) => (
                             <Stack
                                 spacing={2}
@@ -324,10 +328,12 @@ function CreateReturnRequest() {
                                     helperText={errors.packagingList?.[index]?.item}
                                     fullWidth
                                     sx={inputStyle}
+                                    className="bodyText"
                                 />
 
                                 <TextField
                                     placeholder="Qty"
+                                    type="number"
                                     value={row.qty}
                                     onChange={(e) =>
                                         handlePackingChange(row.id, "qty", e.target.value)
@@ -335,6 +341,7 @@ function CreateReturnRequest() {
                                     error={!!errors.packagingList?.[index]?.qty}
                                     helperText={errors.packagingList?.[index]?.qty}
                                     sx={{ ...inputStyle, width: 100 }}
+                                    className="bodyText"
                                 />
                                 <Button
                                     onClick={() => removePackingItem(row.id)}
@@ -354,8 +361,8 @@ function CreateReturnRequest() {
                     <Divider sx={{ my: 4 }} />
 
                     <Stack spacing={2} alignItems="center" variant="outlined" sx={{ p: 2, backgroundColor: "#f3f3f3ff", borderRadius: "1rem" }}>
-                        <Typography fontWeight={500} mb={1} >
-                            Additional Details
+                        <Typography mb={1} className="titleText">
+                            Additional Details :
                         </Typography>
 
                         <Button fullWidth component="label" sx={{ backgroundColor: "#a4c2ef", color: "#000", borderRadius: "1rem", px: 4 }}>
@@ -384,6 +391,7 @@ function CreateReturnRequest() {
                     </Stack>
 
                     <FormControlLabel
+                        className="bodyText" sx={{ mt: 2 }}
                         control={
                             <Checkbox
                                 name="hasDigitalDevice"
@@ -400,7 +408,7 @@ function CreateReturnRequest() {
                     <Stack direction="row" spacing={2} justifyContent="flex-end">
                         <Button
                             variant="outlined"
-                            onClick={() => navigate("/store/dashboard")}
+                            onClick={() => navigate("/store/requests")}
                         >
                             Cancel
                         </Button>

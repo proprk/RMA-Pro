@@ -15,7 +15,7 @@ function StoreDashboard() {
         <>
             <StoreHeader />
 
-            <Box sx={{ maxHeight: 'calc(100vh-64px', overflow: 'auto', px: { xs: 2, sm: 2, md: 4, lg: 6 }, py: 2 }}>
+            <Box sx={{ maxHeight: 'calc(100vh - 84px)', overflow: 'auto', px: { xs: 2, sm: 2, md: 4, lg: 6 }, py: 2 }} maxWidth='1440px' mx='auto' mt={8}>
 
                 <Box sx={{ maxWidth: '800px' }}>
                     <Typography variant="h6">
@@ -26,22 +26,23 @@ function StoreDashboard() {
                             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#000", color: '#fff', borderRadius: '2rem', width: '40px', height: '40px' }}>
                                 <RuleIcon fontSize="extraSmall" />
                             </Box>
-                            <Typography variant='h6'>
+                            <Typography variant='h6' className='headerTextStyle'>
                                 Requests
                             </Typography>
 
                         </Box>
                         <Divider />
                         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <Typography>
+                            <Typography className='bodyTextStyle'>
                                 No Requests Created Yet
                             </Typography>
-                            <Typography variant='body2' color='textSecondary' mt={2}>
+                            <Typography variant='body2' color='textSecondary' mt={2} className='bodyTextStyle'>
                                 Create a new request to get started
                             </Typography>
                             <Button
                                 variant="contained"
-                                sx={{ mt: 2, px: 2, py: 1, fontSize: '0.8rem', backgroundColor: '#a4c2ef', color: '#000', borderRadius: '2rem' }}
+                                className='lightOrangeButton'
+                                // sx={{ mt: 2, px: 2, py: 1, fontSize: '0.8rem', backgroundColor: '#a4c2ef', color: '#000', borderRadius: '2rem' }}
                                 onClick={handleCreateRequest}
                             >
                                 Create Request
